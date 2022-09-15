@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Animé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/app.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100">
+    <main>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                   <div class="card mb-3">
+                    <form action="" id="formAnime">
+                       <div class="card-header bg-primary text-white"><h3>Creer un anime à regarder</h3></div>
+                       <div class="card-body">
+                          
+                                <div class="form-group">
+                                    <label for="nom">Nom de l'anime</label>
+                                    <input type="text" name="animeName" required class="form-control" id="animeName" placeholder="Exemple : Naruto ">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Lien vers l'anime</label>
+                                    <input type="url" name="animeUrl" required class="form-control" id="animeUrl" placeholder="https://kn-tamago.fr/series/yumeiro-patissiere">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Lien vers l'image</label>
+                                    <input type="url" name="animeUrl" class="form-control" id="animeImage" placeholder="https://cdn.oneesports.gg/cdn-data/2022/04/OnePiece_FilmRedUta.jpg">
+                                </div>
+                          
+                       </div>
+                       <div class="card-footer"> 
+                          <button class="btn btn-primary btn-block" id="btnAddAnime" type="button">Ajouter</button>
+                      </div>
+                    </form>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                      <div class="card-header  bg-primary text-white"><h3>Liste des anime à regarder</h3></div>
+                      <div class="card-body p-0">
+                        <div class="list-group w-auto list_anime_scrool" id="animeList">
+                          
+                        </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+
+                <hr>
+                 <div class="row">
+                     <div class="col-md-4">
+                        <div>
+                            <button 
+                            id="generatedBtn"
+                            class="btn btn-block btn-primary p-2">Generer un anime aleatoire  <span></span> </button>
+                        </div>
+                        <hr>
+                        <div class="resultat border border-dark p-5 mb-3">
+                            <p class="text-center" id="animeGenerated" style="font-size: 18pt;">xxxxxxxxx</p>
+                        </div>
+                     </div>
+                     <div class="col-md">
+                        <div class="card mb-4">
+                            <div class="card-header  bg-primary text-white"><h3>Animé generé aleoirement</h3></div>
+                            <div class="card-body p-0">
+                              <div class="list-group w-auto list_anime_scrool" id="randomAnimeList">
+                                
+                              </div>
+                        </div>
+                          </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
